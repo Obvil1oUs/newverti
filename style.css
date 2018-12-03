@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =======================MY CSS======================= */
+
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+.wrap {
+    width: 980px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #000;
+    background-color: rgb(0, 0, 66);
+}
+
+header {
+    width: 966px;
+    height: 150px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+main {
+    display: flex;
+    width: 676px;
+    height: 400px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: justify;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+nav {
+    float: left;
+    width: 266px;
+    height: 400px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+footer {
+    display: flex;
+    clear: both;
+    width: 966px;
+    height: 38px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+
+#logo_img {
+    position: relative;
+    left: 23%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#footer_text {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+
+
+/* ==========================MEDIA QUARIES============================= */
+
+
+
+/* ============================320p=========================== */
+
+
+@media screen and (max-width:320px) {
+    body {
+        font-size: 0.75em;             /*  Поменял размер шрифта */
+    }
+    
+    .wrap {
+        margin: 5px;
+        border: 1px solid #000;
+        padding: 3px;
+        max-width: 302px;
+        min-height: 700px;
+        margin: 0 0;
+    }
+
+    header {
+        padding: 3px;
+        border: 1px solid blue;
+        max-width: 290px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        padding: 3px;
+        border: 1px solid blue;
+        max-width: 296px;
+        margin-left: 0;
+        margin-top: 5px;
+        float: none;
+    }
+
+    nav { 
+        padding: 3px;
+        border: 1px solid blue;
+        max-width: 296px;
+        height: 60px;
+    }
+
+    footer {
+        padding: 3px;
+        border: 1px solid blue;
+        max-width: 296px;
+        float: none;
+        margin-top: 5px; 
+    }
+
+    #logo_img {
+        position: static;
+    }
+}
+
+/* ===================================================================== */
+
+
+
+
+/* =======================================480p====================================== */
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .wrap {
+        margin: 5px;
+        border: 1px solid #000;
+        padding: 3px;
+        max-width: 470px;
+        min-height: 750px;
+        margin: 0 0;
+        margin-right: 0;
+    }
+
+    header {
+        padding: 3px;
+        border: 1px solid blue;
+        max-width: 460px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        border: 1px solid blue;
+        width: 458px;
+        height: 90px;
+    }
+
+    main {
+        min-width: 297px;
+        max-width: 458px;
+        margin-left: 0;
+    }
+
+    footer {
+        max-width: 458px;
+        margin-left: 0;
+        border: 1px solid blue;
+    }
+
+    #logo_img {
+        position: static;
+    }
+}
+
+/* ================================================================= */
+
+
+/* ========================================720p========================================= */
+
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    .wrap {
+        border: 1px solid #000;
+        padding: 5px;
+        min-width: 471px;
+        max-width: 708px;
+        min-height: 850px;
+        margin: 0 0;
+        margin-right: 0;
+    }
+
+    header {
+        padding: 3px;
+        border: 1px solid blue;
+        min-width: 463px;
+        max-width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo_img {
+        position: static;
+        justify-content: space-around;
+    }
+
+    main {
+        border: 1px solid blue;
+        padding: 3px;
+        width: 700px;
+        min-height: 500px;
+    }
+
+    nav {
+        border: 1px solid blue;
+        padding: 3px;
+        width: 700px;
+        height: 95px;
+    }
+
+    footer {
+        width: 696px;
+        margin-left: 0;
+        border: 1px solid blue;
+    }
+}
