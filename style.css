@@ -76,7 +76,7 @@ header {
     text-align: center;
     padding: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: lightblue;
     border: 2px solid blue;
@@ -87,6 +87,7 @@ main {
     width: 676px;
     height: 400px;
     float: right;
+    flex-direction: column;
     margin-left: 5px;
     margin-top: 10px;
     padding: 5px;
@@ -120,10 +121,10 @@ footer {
 #logo_img {
     position: relative;
     left: 23%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     box-sizing: border-box;
-    width: 150px;
-    height: 100px;
+    /* width: 150px;
+    height: 100px; */
     display: flex;
     align-items: center;
 }
@@ -193,7 +194,6 @@ h1 {
     }
 
     #logo_img {
-        position: static;
     }
 }
 
@@ -222,7 +222,8 @@ h1 {
         border: 1px solid blue;
         max-width: 460px;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     nav {
@@ -271,12 +272,12 @@ h1 {
         min-width: 463px;
         max-width: 700px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
-    #logo_img {
-        position: static;
-        justify-content: space-around;
+    #img {
+        position: relative;
+        left: 50%;
     }
 
     main {
